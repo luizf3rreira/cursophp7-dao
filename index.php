@@ -29,6 +29,8 @@ echo json_encode($usuarios);
 // $usuario->login("jose", "123456");
 // echo json_encode($usuario);
 
+//Criando um novo usuário
+/*
 $aluno = new Usuarios("aluno", "@alun0");
 
 $aluno->setDeslogin("aluno");
@@ -37,5 +39,16 @@ $aluno->setDessenha("@lun0");
 $aluno->insert();
 
 echo $aluno;
+*/
+
+$usuario = new Usuarios();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "!@#$%");
+
+echo $usuario;
+
+
 
  ?>
