@@ -88,7 +88,7 @@ class Usuarios {
 	public function insert(){
 
 		$sql = new Sql();
-		$result = $sql->select("CALL sp_usuarios_isert(:LOGIN, :PASSWORD)", array(
+		$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)", array(
 			':LOGIN'=>$this->getDeslogin(),
 			':PASSWORD'=>$this->getDessenha()
 		));

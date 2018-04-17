@@ -10,24 +10,24 @@ echo json_encode($usuarios);
 */
 
 //Carrega 1 usuário
-// $root = new Usuarios;
+$root = new Usuarios;
 
-// $root->loadById(1);
+$root->loadById(1);
 
-// echo $root;
+echo $root;
 
 //Carrega uma lista de usuários
 // $lista = Usuarios::getList();
 // echo json_encode($lista);
 
 //Carrega uma lista de usuarios buscando pelo login
-// $search = Usuarios::search("jo");
-// echo json_encode($search);
+/*$search = Usuarios::search("jo");
+echo json_encode($search);*/
 
 //Carrega um usuario usando o login e a senha
-// $usuario = new Usuarios();
-// $usuario->login("jose", "123456");
-// echo json_encode($usuario);
+/*$usuario = new Usuarios();
+$usuario->login("jose", "123456");
+echo json_encode($usuario);*/
 
 //Criando um novo usuário
 /*
@@ -52,13 +52,13 @@ $usuario->update("professor", "!@#$%");
 echo $usuario;
 */
 
-$usuario = new Usuarios();
+/*$usuario = new Usuarios();
 
 $usuario->loadById(3);
 
 $usuario->delete();
 
-echo $usuario;
+echo $usuario;*/
 
 
 
